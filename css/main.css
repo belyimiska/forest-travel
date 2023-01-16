@@ -16,6 +16,8 @@ html {
   width: 1170px;
 }
 
+/* ------------ MAIN -----------*/
+
 /* header */
 
 .header {
@@ -24,7 +26,7 @@ html {
   position: relative;
 
   background-color: #265847;
-  background-image: url("../img/forest.jpg");
+  background-image: url("../img/header/forest.jpg");
   background-position: center;
   background-size: cover;
 
@@ -114,7 +116,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
 
-  background-image: url("../img/arrow-down.svg");
+  background-image: url("../img/header/arrow-down.svg");
 }
 
 /* Main-content */
@@ -250,4 +252,117 @@ html {
 
 .footer-widget-list li:not(:last-child) {
   margin-bottom: 15px;
+}
+
+/* ------------ TOURS -----------*/
+
+/* Header */
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  height: 100px;
+
+  background-color: #265847;
+  background-image: url("../img/header/header-small.jpg");
+  background-position: center;
+  background-size: cover;
+
+  color: #fff;
+}
+
+/* Main */
+
+.inner-page-tours {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.inner-page-tours-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* Cards */
+
+.cards-wrapper a {
+  display: block;
+}
+
+.cards-first-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.cards-second-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-second-row-column > * + * {
+  margin-top: 30px;
+}
+
+.card-link-wrapper {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card-link-wrapper:hover {
+  opacity: 0.8;
+}
+
+.card {
+  width: 570px;
+}
+
+.card.bigger {
+  width: 670px;
+}
+
+.card.smaller {
+  width: 470px;
+}
+
+.card-title-wrapper {
+  display: flex;
+  align-items: center;
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  height: 80px;
+  color: #fff;
+}
+
+.card.tours-color .card-title-wrapper {
+  background-color: #a6a6a6;
+}
+
+.card.extreme-color .card-title-wrapper {
+  background-color: #c1b19b;
+}
+
+.card.advent-color .card-title-wrapper {
+  background-color: #66b0be;
+}
+
+.card.tracking-color .card-title-wrapper {
+  background-color: #876f56;
+}
+
+.card.jungles-color .card-title-wrapper {
+  background-color: #27695e;
+}
+
+.card-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  font-weight: 700;
+  font-size: 28px;
 }
