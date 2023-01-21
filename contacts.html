@@ -86,8 +86,8 @@
           <form class="form">
             <h4 class="form-title">Заявка на подбор тура</h4>
 
-            <div class="form-group">
-              <div class="form-group-title">Личные данные</div>
+            <fieldset class="form-group">
+              <legend class="form-group-title">Личные данные</legend>
 
               <input
                 class="input"
@@ -110,10 +110,12 @@
                   required
                 />
               </div>
-            </div>
+            </fieldset>
 
-            <div class="form-group">
-              <div class="form-group-title">Количество человек для тура</div>
+            <fieldset class="form-group">
+              <legend class="form-group-title">
+                Количество человек для тура
+              </legend>
 
               <label class="radio-row">
                 <input class="real-radio" type="radio" name="count-of-people" />
@@ -132,12 +134,12 @@
                 <span class="custom-radio"></span>
                 <span>11 человек и более</span>
               </label>
-            </div>
+            </fieldset>
 
-            <div class="form-group">
-              <div class="form-group-title">
+            <fieldset class="form-group">
+              <legend class="form-group-title">
                 Какие направления вам интересны
-              </div>
+              </legend>
 
               <label class="checkbox-row">
                 <input class="real-checkbox" type="checkbox" name="" />
@@ -164,7 +166,7 @@
                 <span class="custom-checkbox"></span>
                 <span>Комбинированные: море, горы, города, лес.</span>
               </label>
-            </div>
+            </fieldset>
 
             <input type="submit" value="Отправить заявку" class="button" />
           </form>

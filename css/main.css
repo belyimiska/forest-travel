@@ -3,8 +3,8 @@
 /* font-family: 'Lobster', cursive;
 font-family: 'PT Sans', sans-serif; */
 
-html {
-  scroll-behavior: smooth;
+body > * {
+  flex-shrink: 0; /* sticky footer */
 }
 
 .none {
@@ -46,6 +46,19 @@ html {
   font-size: 20px;
   color: #fff;
   text-decoration: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+legend {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 /* ------------ MAIN -----------*/
@@ -202,6 +215,7 @@ html {
 /* Footer */
 
 .footer {
+  margin-top: auto; /* sticky footer */
   padding: 70px 0 90px;
 
   background-color: #265847;
@@ -747,4 +761,31 @@ html {
 .real-checkbox:focus + .custom-checkbox {
   border: 1px solid #2ab698;
   box-shadow: 0 0 10px rgba(42, 182, 152, 0.8);
+}
+
+/* ---- 404 Not Found ---- */
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.not-found-wrapper {
+  text-align: center;
+}
+
+.not-found-wrapper p {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.not-found-wrapper a {
+  color: #138ece;
+  text-decoration: none;
+}
+
+.not-found-wrapper a:hover {
+  text-decoration: underline;
 }
