@@ -1,5 +1,15 @@
 @import "./reset.css";
 
+/* header {
+  display: none;
+} */
+/* main {
+  display: none;
+} */
+/* footer {
+  display: none;
+} */
+
 /* font-family: 'Lobster', cursive;
 font-family: 'PT Sans', sans-serif; */
 
@@ -17,7 +27,10 @@ body > * {
 
 .container {
   margin: 0 auto;
-  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  width: 1200px;
 }
 
 .inner-page {
@@ -99,6 +112,10 @@ legend {
   display: flex;
 }
 
+.header-nav-button {
+  display: none;
+}
+
 .header-nav-list-item {
   margin-right: 50px;
 }
@@ -126,7 +143,8 @@ legend {
 
 .header-title {
   font-size: 60px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .header-content p {
